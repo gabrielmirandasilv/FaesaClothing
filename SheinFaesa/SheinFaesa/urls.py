@@ -1,5 +1,5 @@
 """
-URL configuration for loja project.
+URL configuration for SheinFaesa project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -17,10 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from SheinFaesa.View.Program import inicio
+from apps.loja import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('loja/' , inicio, name='loja'),
+    path('loja/', views.exemplo),
 ]
-
