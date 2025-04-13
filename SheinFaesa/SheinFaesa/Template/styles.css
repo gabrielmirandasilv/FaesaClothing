@@ -60,14 +60,8 @@ nav a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .product img {
-    max-width: 100%;
-    height: auto;
-}
-.contact {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 2em 0;
+    max-width: 500px;
+    height: 55px;
 }
 footer {
     background: #555;
