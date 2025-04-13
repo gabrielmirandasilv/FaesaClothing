@@ -45,24 +45,59 @@ nav a {
     background: rgba(0, 0, 0, 0.5);
     padding: 0.5em 1em;
 }
-.products {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 2em 0;
-}
-.product {
-    background: white;
-    border: 1px solid #ddd;
-    margin: 1em;
-    padding: 1em;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.product img {
-    max-width: 500px;
-    height: 55px;
-}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  .item:hover {
+    transform: scale(1.02);
+  }
+
+  .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .descricao {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+
+  .preco {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .botao {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+
+  .botao:hover {
+    background-color: #2980b9;
+  }
 footer {
     background: #555;
     color: white;
